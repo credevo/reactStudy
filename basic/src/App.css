@@ -1,4 +1,20 @@
-.orange {
+.profile {
+  width:300px;
+  text-align : center;
+  padding : 1rem;
+  background-color : gray;
+  border-radius : 20px;
+
+}
+
+.photo {
+  width:200px;
+  height:200px;
+  border-radius : 100%;
+}
+
+
+/* .orange {
   color : orange;
 }
 .App {
@@ -38,4 +54,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

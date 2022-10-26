@@ -125,3 +125,28 @@ yarn install
 
 yarn start 
 
+## react custom snippet 작성 => >snippet 만들고 작성
+```json
+{
+  "reactFunction": {
+    "prefix": "rfc",
+    "body": "import React from 'react';\n\nexport default function ${1:${TM_FILENAME_BASE}}() {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n}\n\n",
+    "description": "Creates a React Function component"
+  },
+  "reactStatelessImplicitReturn": {
+    "prefix": "rsi",
+    "body": "import React from 'react';\n\nexport const ${1:${TM_FILENAME_BASE}} = (props) => (\n\t\t\t$0\n\t);",
+    "description": "Creates a React Function component"
+  },
+  "Import Module CSS": {
+    "prefix": "si",
+    "body": ["import styles from './$TM_FILENAME_BASE.module.css'"],
+    "description": "Import PostCSS"
+  },
+  "ClassName": {
+    "prefix": "cn",
+    "body": ["className={styles.$1}"],
+    "description": "Adding className"
+  }
+}
+```

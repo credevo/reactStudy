@@ -12,6 +12,7 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "serve": "webpack serve --open",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
   }
 }

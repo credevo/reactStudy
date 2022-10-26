@@ -3,6 +3,8 @@ import './App.css';
 
 function App() {
   const name = '엘리';
+  const list =['우유','딸기','바나나'];
+
   return (
     <div className="App">
       <h1 className="orange">
@@ -13,17 +15,15 @@ function App() {
       </h1>
       <h2>
       {name} 
-</h2>
+    </h2>
+    
       <ul>
-        <li>우유1</li>
-        <li>우유2</li>
-        <li>우유3</li>
-        <li>우유4</li>
-        
+        {list.map(l => <li>{l}</li>)}
       </ul>
-      <img style={{
+    <div>
+    <img style={{
         width : '200px', height: '200px'
-      }} src="https://cdn.crowdpic.net/list-thumb/thumb_l_572442AD59D1F0170C27B68AC7F4377A.jpg" />
+      }} src="https://cdn.crowdpic.net/list-thumb/thumb_l_572442AD59D1F0170C27B68AC7F4377A.jpg" /></div>  
     </div>
   );
 }
