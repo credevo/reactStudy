@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'; 
 
-export default function Counter() {
+export default function Counter({upCounter}) {
 
     const [num, setNum] = useState(0);
     useEffect(()=>{
@@ -22,6 +22,7 @@ export default function Counter() {
                 const newNum = num + 1;
                 setNum(newNum);
                 console.log('beforeNum:' , num);
+                upCounter();
                 /** 
                  *  setNumb(num+1)
                  *  setNumb(num+1)
