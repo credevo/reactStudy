@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'; 
 
-export default function Counter({upCounter}) {
+export default function Counter({total,onClick}) {
 
     const [num, setNum] = useState(0);
     useEffect(()=>{
         console.log('changeNum', num);   
-    },[num])
+    },[num]);
     /**
      * useState로 데이터를 선언하고, state를 변경 했을때,
      * react 해당 컴포넌트(함수)를 호출하고, 
@@ -17,12 +17,14 @@ export default function Counter({upCounter}) {
      */
     return(
         <div className="counter">
-            <span className="number">{num}</span>
+            <p className="number">
+                {num} <span className="total">/{total}</span> 
+            </p>
             <button className="button" onClick={()=>{
                 const newNum = num + 1;
                 setNum(newNum);
                 console.log('beforeNum:' , num);
-                upCounter();
+                onClick();
                 /** 
                  *  setNumb(num+1)
                  *  setNumb(num+1)
@@ -41,4 +43,3 @@ export default function Counter({upCounter}) {
         </div>
     );
 }
-
