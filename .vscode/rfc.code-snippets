@@ -1,6 +1,6 @@
 {
 	"reactFunction" : {
-		"prefix" : "rfc",
+		"prefix" : "rr",
 		"body" : "import React from 'react'; \n\nexport default function ${1:${TM_FILENAME_BASE}}() {\n\treturn(\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n}\n\n",
 	}
 	// Place your reactStudy workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 

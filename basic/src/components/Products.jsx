@@ -5,7 +5,7 @@ export default function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-        const res = fetch('data/products.json')
+        fetch('data/products.json')
           .then(res=>res.json())
           .then((json)=> setProducts(json));
   },[]);
@@ -13,8 +13,8 @@ export default function Products() {
   return (
     <>
       <ul>
-        {products.map((product) => (
-          <li key={product.id}>
+        {products.map((product,index) => (
+          <li key={product.id ?? index}>
             <article>
               <h3>{product.name}</h3>
               <p>{product.price}</p>
