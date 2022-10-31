@@ -15,8 +15,7 @@ export default function AppCounter() {
                 <Counter total={count} onClick={upCounter}/>
                 <Counter total={count} onClick={upCounter}/>
             </div>
-            
         </div>
-            );
+    );
 }
 

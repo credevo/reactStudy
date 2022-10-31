@@ -154,9 +154,7 @@ yarn start
   },
   "Import Module CSS": {
     "prefix": "si",
-    "body": [
-      "import styles from './$TM_FILENAME_BASE.module.css'"
-    ],
+    "body": ["import styles from './$TM_FILENAME_BASE.module.css'"],
     "description": "Import PostCSS"
   },
   "ClassName": {
@@ -166,3 +164,20 @@ yarn start
   }
 }
 ```
+
+#useEffect
+: state를 변경이 되었을때나, http통신을 사용하거나 할때 사용할수 있다.
+: return를 정의하여 destory될때 속성을 지정하고,
+: dependency에 state를 등록하여 useEffect를 의 재호출이 결정된다.
+
+#useState
+:state : 내부적으로 상태를 가지고 DOM과 관련이 있을경우 정의하여 사용한다.
+
+#list에서의 Key 속성 :
+list 형태의 DOM 에서 key 속성을 통해, key 값이 변경된것만 업데이트 처리되므로
+성능향상을 위해서 key 라는 속성을 써서 가져가야한다.
+
+# React
+
+데이터를 state(내부상태) props(외부로 부터 전달받는 상태) 나타내는 render가 있다.
+상태가 변경될때마다 re-render된다.
