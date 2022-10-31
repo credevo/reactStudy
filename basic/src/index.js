@@ -8,11 +8,11 @@ import AppProducts from './AppProducts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
     {/* <AppProfile /> */}
     {/* <AppCounter /> */}
     <AppProducts />
-  </React.StrictMode>
+  </>
 );
 
 // If you want to start measuring performance in your AppProfile, pass a function
