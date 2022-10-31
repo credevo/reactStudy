@@ -1,100 +1,101 @@
-width:300px;
 .profile {
-  text-align : center;
-  padding : 1rem;
+  text-align: center;
+  padding: 1rem;
   /* background-color : gray; */
-  background-color : #ebebeb;
-  border-radius : 20px;
+  background-color: #ebebeb;
+  border-radius: 20px;
   /* box shadow */
-  box-shadow: 10px 10px 5px 14px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 10px 10px 5px 14px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 14px rgba(0,0,0,0.75);
-  margin : 50px;
+  box-shadow: 10px 10px 5px 14px
+    rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 14px
+    rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 14px
+    rgba(0, 0, 0, 0.75);
+  margin: 50px;
 }
 
-
-.avarta{
+.avarta {
   /**
   new class를 위해 부모로 셋팅해고 
   **/
-  position : relative;
+  position: relative;
   /**
   new class 위해? 자체 컴퍼넌트 사용을 위해
   photo랑 같은 사이즈로 설정
   **/
-  width:200px;
+  width: 200px;
   height: 200px;
   /**
   마진은 오토로 주면 센터로 오게 된다.
   스크린 사이즈가 변해도 센터로 오게 되어있네
   **/
-  margin: auto; 
+  margin: auto;
 }
 .photo {
-  width:200px;
-  height:200px;
-  border-radius : 100%;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
 }
 .new {
-  position : absolute; 
+  position: absolute;
   /* 인접한 static에 근거하지만, 부모에 relative가 있다면 
   * 그 부모메 근거하게 된다.
   */
-  left : 65%;
-  top : 5%;
-  background-color : red;
-  padding :0.2rem 0.5rem;
-  border-radius : 0.5rem;
+  left: 65%;
+  top: 5%;
+  background-color: red;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
   /*
   * 모든 text 대문자로 변경;;; 포맷을 다 바꾸는 구나;
   */
-  text-transform: uppercase; 
-  font-weight: 600; 
-  color : white;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
 }
 
 .container {
   /* display : flex;
   justify-content: center; */
-  width:500px;
-  margin : auto;
+  width: 500px;
+  margin: auto;
 }
 .banner {
   text-align: center;
-  margin-top : 5rem;
-  font-size : 2rem;
-  background-color : green;
-  font-weight : bold;
+  margin-top: 5rem;
+  font-size: 2rem;
+  background-color: green;
+  font-weight: bold;
 }
 .counter {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2rem;
-  padding : 1rem;
+  padding: 1rem;
   border-radius: 1rem;
-  border: 2px solid rgb(215,127,12);
+  border: 2px solid rgb(215, 127, 12);
 }
 .counter:hover {
-  background-color:rgb(246,243,197);
+  background-color: rgb(246, 243, 197);
 }
 .number {
-  font-size : 7em;
+  font-size: 7em;
 }
-.button{
-  font-size : 2rem;
-  padding : 0.2rem 1rem;
-  border-radius : 0.5rem;
-  cursor : pointer;
-  background : rgb(251,127,12);
-  background : linear-gradient(
+.button {
+  font-size: 2rem;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: rgb(251, 127, 12);
+  background: linear-gradient(
     90deg,
-    rgba(215,127,12,1) 0%,
-    rgba(253,220,29,1) 100%
-  )
+    rgba(215, 127, 12, 1) 0%,
+    rgba(253, 220, 29, 1) 100%
+  );
 }
 
-.total{
-  font-size : 1rem;
-  margin-left : -1.5rem;
+.total {
+  font-size: 1rem;
+  margin-left: -1.5rem;
 }
