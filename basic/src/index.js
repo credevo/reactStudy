@@ -5,6 +5,7 @@ import ReactDOM from "react-dom/client";
 // import AppMentos from "./AppMentos";
 // import AppForm from "./AppForm";
 import AppWrap from "./AppWrap";
+import AppWrapHighOrder from "./AppWrapHighOrder";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -14,6 +15,7 @@ root.render(
     {/* <AppMentos />
     <AppMentosImmer /> */}
     {/* <AppForm /> */}
-    {<AppWrap />}
+    <AppWrap />
+    <AppWrapHighOrder />
   </>
 );
