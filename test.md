@@ -181,3 +181,9 @@ list 형태의 DOM 에서 key 속성을 통해, key 값이 변경된것만 업�
 
 데이터를 state(내부상태) props(외부로 부터 전달받는 상태) 나타내는 render가 있다.
 상태가 변경될때마다 re-render된다.
+
+# useState
+
+# useImmer, immer
+
+# 관련된 state는 하나의 객체로 관리하여 사용한다
